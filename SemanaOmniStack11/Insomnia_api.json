@@ -1,0 +1,273 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-03-30T17:16:37.757Z",
+  "__export_source": "insomnia.desktop.app:v7.1.1",
+  "resources": [
+    {
+      "_id": "req_99f6e87fabae400e9a6ece95ba235ee6",
+      "authentication": {},
+      "body": {},
+      "created": 1585093528856,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "disabled": false,
+          "id": "pair_3cd538aa5f8f44a38b3e93e50714f638",
+          "name": "Authorization",
+          "value": "d1355371"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1585093528856,
+      "method": "GET",
+      "modified": 1585496746391,
+      "name": "Profile",
+      "parameters": [],
+      "parentId": "wrk_9e469398ea3c4bf890eee6d36627b756",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "localhost:3333/profile",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_9e469398ea3c4bf890eee6d36627b756",
+      "created": 1585090266182,
+      "description": "",
+      "modified": 1585090266182,
+      "name": "Semana OmniStack11",
+      "parentId": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_0e35c67bb6174b45b2b73aa62236d0c8",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"id\": \"d1355371\"\n}"
+      },
+      "created": 1585093846720,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_c448239e1ff247d1972e0bb38d17fb49",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1585092644407,
+      "method": "POST",
+      "modified": 1585497119264,
+      "name": "Login",
+      "parameters": [],
+      "parentId": "wrk_9e469398ea3c4bf890eee6d36627b756",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "localhost:3333/sessions",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c50245af5b994c50b26291bbb47adda7",
+      "authentication": {},
+      "body": {},
+      "created": 1585092172703,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1585091759958,
+      "method": "GET",
+      "modified": 1585496765629,
+      "name": "List",
+      "parameters": [],
+      "parentId": "fld_e910b06cb7e54188ac7b4d3581a1d269",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "localhost:3333/incidents?page=1",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_e910b06cb7e54188ac7b4d3581a1d269",
+      "created": 1585091751878,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1585091751878,
+      "modified": 1585091751878,
+      "name": "Casos",
+      "parentId": "wrk_9e469398ea3c4bf890eee6d36627b756",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_01fb2b30fa1e4f0e8342e6bd8b975e42",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"Caso 1\",\n\t\"description\": \"Detalhes do caso\",\n\t\"value\": 123\n}"
+      },
+      "created": 1585091759908,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_c467435b854540d7be528e97a6fd41f9",
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "description": "",
+          "disabled": false,
+          "id": "pair_1aee6edb3d914e12a97bd2f0a98f9904",
+          "name": "Authorization",
+          "value": "d1355371"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1585091759908,
+      "method": "POST",
+      "modified": 1585588465627,
+      "name": "Create",
+      "parameters": [],
+      "parentId": "fld_e910b06cb7e54188ac7b4d3581a1d269",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "localhost:3333/incidents",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4728edb7c3b74808945ce28232c391ee",
+      "authentication": {},
+      "body": {},
+      "created": 1585092602803,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_1aee6edb3d914e12a97bd2f0a98f9904",
+          "name": "Authorization",
+          "value": "d1355371"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1585091035933.5,
+      "method": "DELETE",
+      "modified": 1585588469650,
+      "name": "Delete",
+      "parameters": [],
+      "parentId": "fld_e910b06cb7e54188ac7b4d3581a1d269",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "localhost:3333/incidents/1",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1a27be243527489cb8bfc2c59d0ac70c",
+      "authentication": {},
+      "body": {},
+      "created": 1585091064872,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1585090311959,
+      "method": "GET",
+      "modified": 1585588577980,
+      "name": "List",
+      "parameters": [],
+      "parentId": "fld_cdb64ff3510749e7bdc293c5c403a838",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "localhost:3333/ongs",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_cdb64ff3510749e7bdc293c5c403a838",
+      "created": 1585090286314,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1585090286315,
+      "modified": 1585090286314,
+      "name": "Ongs",
+      "parentId": "wrk_9e469398ea3c4bf890eee6d36627b756",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_15f5375c68cf4e5298f00fdf9a3f5772",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"APAD\",\n\t\"email\": \"contato@apad.com.br\",\n\t\"whatsapp\": \"12345678910\",\n\t\"city\": \"Rio do Sul\",\n\t\"uf\": \"SC\"\n}"
+      },
+      "created": 1585090311908,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_d54dedc23c924948a0afb7a40dc5ac83",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1585090311909,
+      "method": "POST",
+      "modified": 1585588507056,
+      "name": "Create",
+      "parameters": [],
+      "parentId": "fld_cdb64ff3510749e7bdc293c5c403a838",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "localhost:3333/ongs",
+      "_type": "request"
+    },
+    {
+      "_id": "env_1c6bc02a85166cfdb8e59747c72a5539277458c6",
+      "color": null,
+      "created": 1585090266433,
+      "data": {},
+      "dataPropertyOrder": null,
+      "isPrivate": false,
+      "metaSortKey": 1585090266433,
+      "modified": 1585090266433,
+      "name": "Base Environment",
+      "parentId": "wrk_9e469398ea3c4bf890eee6d36627b756",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_1c6bc02a85166cfdb8e59747c72a5539277458c6",
+      "cookies": [],
+      "created": 1585090266438,
+      "modified": 1585090266438,
+      "name": "Default Jar",
+      "parentId": "wrk_9e469398ea3c4bf890eee6d36627b756",
+      "_type": "cookie_jar"
+    }
+  ]
+}
