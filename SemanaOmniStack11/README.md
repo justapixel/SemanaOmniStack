@@ -58,7 +58,7 @@ O App Mobile (React Native) desenvolvido durante o 4º Dia, ficando assim:
 
 <img align="center" src="./static/mobile.gif?v=2"></img>
 
-## Imnsonia 
+## Insomnia 
 Para testar a API do Be The Hero, considere baixar e intalar o [Insomnia](https://insomnia.rest/download/) e em seguida clique na Workspace → `Import/Export` →  
 `Import Data` → `From File` → e selecione o arquivo `Insomnia_api.json` deste repositório. Assim que terminar, o resultado ficará assim:
 
